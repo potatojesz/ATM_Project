@@ -22,7 +22,7 @@ public class Account {
 
 	@Id
 	@NotBlank
-	@Size(min = 26, max = 26)
+	@Size(min = 16, max = 16)
 	private String number;
 
 	@NotBlank

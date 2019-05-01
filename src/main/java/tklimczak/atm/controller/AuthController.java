@@ -39,13 +39,13 @@ public class AuthController {
 	@CrossOrigin
 	@PostMapping()
 	public ResponseEntity<?> authenticateAccount(@Valid @RequestBody LoginRequest loginRequest) {
-		final String accountNumber = loginRequest.getAccountNumber();
+		final String cardNumber = loginRequest.getCardNumber();
 		Authentication authentication = authenticationManager.authenticate(
-				new UsernamePasswordAuthenticationToken(accountNumber, loginRequest.getPin()));
+				new UsernamePasswordAuthenticationToken(cardNumber, loginRequest.getPin()));
 
 		SecurityContextHolder.getContext().setAuthentication(authentication);
 
 		String jwt = tokenProvider.generateToken(authentication);
-		return ResponseEntity.ok(new JwtAuthenticationResponse(jwt, accountNumber));
+		return ResponseEntity.ok(new JwtAuthenticationResponse(jwt, cardNumber));
 	}
 }

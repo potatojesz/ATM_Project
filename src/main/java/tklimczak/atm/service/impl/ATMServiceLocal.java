@@ -49,10 +49,10 @@ public class ATMServiceLocal implements ATMService {
 
 	private Account getAccount() {
 		AccountPrincipal accountPrincipal= (AccountPrincipal)SecurityContextHolder.getContext().getAuthentication().getPrincipal();
-		String accountNumber = accountPrincipal.getNumber();
-		return accountRepository.findByNumber(accountNumber)
+		String cardNumber = accountPrincipal.getNumber();
+		return accountRepository.findByNumber(cardNumber)
 				.orElseThrow(() -> 
-					new AccountNotFoundException("Account not found with number: " + accountNumber)
+					new AccountNotFoundException("Account not found with number: " + cardNumber)
 				);
 	}
 }

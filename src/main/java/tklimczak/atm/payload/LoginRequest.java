@@ -4,16 +4,16 @@ import javax.validation.constraints.NotBlank;
 
 public class LoginRequest {
 	@NotBlank
-	private String accountNumber;
+	private String cardNumber;
 
 	@NotBlank
 	private String pin;
 
-	public String getAccountNumber() {
-		return accountNumber;
+	public String getCardNumber() {
+		return cardNumber;
 	}
-	public void setAccountNumber(String accountNumber) {
-		this.accountNumber = accountNumber;
+	public void setCardNumber(String cardNumber) {
+		this.cardNumber = cardNumber;
 	}
 
 	public String getPin() {
