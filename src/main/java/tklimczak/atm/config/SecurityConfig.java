@@ -15,10 +15,10 @@ import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
-import tklimczak.atm.security.CustomUserDetailsService;
-import tklimczak.atm.security.JwtAuthenticationEntryPoint;
-import tklimczak.atm.security.JwtAuthenticationFilter;
-import tklimczak.atm.security.NoPasswordEncoder;
+import tklimczak.atm.config.security.CustomUserDetailsService;
+import tklimczak.atm.config.security.JwtAuthenticationEntryPoint;
+import tklimczak.atm.config.security.JwtAuthenticationFilter;
+import tklimczak.atm.config.security.NoPasswordEncoder;
 
 @Configuration
 @EnableWebSecurity

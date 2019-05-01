@@ -1,4 +1,4 @@
-package tklimczak.atm.security;
+package tklimczak.atm.config.security;
 
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import java.lang.annotation.*;

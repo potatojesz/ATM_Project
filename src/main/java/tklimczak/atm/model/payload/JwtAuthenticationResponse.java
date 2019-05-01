@@ -1,4 +1,4 @@
-package tklimczak.atm.payload;
+package tklimczak.atm.model.payload;
 
 public class JwtAuthenticationResponse {
 	private String token;

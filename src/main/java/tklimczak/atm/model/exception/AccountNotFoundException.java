@@ -1,4 +1,4 @@
-package tklimczak.atm.exception;
+package tklimczak.atm.model.exception;
 
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 

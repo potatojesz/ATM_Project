@@ -7,11 +7,11 @@ import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import tklimczak.atm.exception.AccountNotFoundException;
-import tklimczak.atm.exception.NotEnoughBalanceException;
+import tklimczak.atm.config.security.AccountPrincipal;
 import tklimczak.atm.model.Account;
+import tklimczak.atm.model.exception.AccountNotFoundException;
+import tklimczak.atm.model.exception.NotEnoughBalanceException;
 import tklimczak.atm.repository.AccountRepository;
-import tklimczak.atm.security.AccountPrincipal;
 import tklimczak.atm.service.ATMService;
 
 @Service("atmService")

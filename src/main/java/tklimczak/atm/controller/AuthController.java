@@ -14,11 +14,11 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import tklimczak.atm.payload.JwtAuthenticationResponse;
-import tklimczak.atm.payload.LoginRequest;
+import tklimczak.atm.config.security.JwtTokenProvider;
+import tklimczak.atm.model.payload.JwtAuthenticationResponse;
+import tklimczak.atm.model.payload.LoginRequest;
 import tklimczak.atm.repository.AccountRepository;
 import tklimczak.atm.repository.RoleRepository;
-import tklimczak.atm.security.JwtTokenProvider;
 
 @RestController
 @RequestMapping("/atm/auth")

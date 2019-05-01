@@ -2,7 +2,7 @@ package tklimczak.atm.service;
 
 import java.math.BigDecimal;
 
-import tklimczak.atm.exception.NotEnoughBalanceException;
+import tklimczak.atm.model.exception.NotEnoughBalanceException;
 
 public interface ATMService {
 	public void addMoney(BigDecimal amount);

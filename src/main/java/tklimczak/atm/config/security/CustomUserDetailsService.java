@@ -1,4 +1,4 @@
-package tklimczak.atm.security;
+package tklimczak.atm.config.security;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -6,8 +6,8 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import tklimczak.atm.exception.AccountNotFoundException;
 import tklimczak.atm.model.Account;
+import tklimczak.atm.model.exception.AccountNotFoundException;
 import tklimczak.atm.repository.AccountRepository;
 
 @Service

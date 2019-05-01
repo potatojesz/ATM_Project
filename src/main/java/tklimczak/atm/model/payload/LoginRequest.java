@@ -1,4 +1,4 @@
-package tklimczak.atm.payload;
+package tklimczak.atm.model.payload;
 
 import javax.validation.constraints.NotBlank;
 
