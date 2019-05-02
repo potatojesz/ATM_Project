@@ -2,7 +2,7 @@
 
 Backend REST ATM application simulating simple Bank using Java Spring Boot with JWT authentication and H2 in memory database
 
-## 1. Prerequisites
+## Prerequisites
 
 **JDK11**
 
