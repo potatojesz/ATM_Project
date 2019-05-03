@@ -4,7 +4,7 @@ Backend REST ATM application simulating simple Bank using Java Spring Boot with 
 
 ## Prerequisites
 
-**JDK11**
+**JDK11** - should work with **JDK8** _(to change it find ```java.version``` in ```pom.xml``` and change it to ```1.8``` instead of ```11```)_
 
 **Maven** (not needed, u can use wrapper ```./mvnw``` instead of ```mvn```)
 
