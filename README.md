@@ -4,7 +4,7 @@ Backend REST ATM application simulating simple Bank using Java Spring Boot with 
 
 ## Prerequisites
 
-**JDK11** - should work with **JDK8** _(to change it find ```java.version``` in ```pom.xml``` and change it to ```1.8``` instead of ```11```)_
+**JDK8**
 
 **Maven** (not needed, u can use wrapper ```./mvnw``` instead of ```mvn```)
 
@@ -30,7 +30,7 @@ mvn spring-boot:run
 
 Application by default is working at port ```8080```, u can change it by adding ```server.port``` value in ```application.properties```
 
-Working Server example is available at [https://tklimczakatm.azurewebsites.net/](https://tklimczakatm.azurewebsites.net/)
+Working Server example is available at [https://tklimczak-atm.herokuapp.com/](https://tklimczak-atm.herokuapp.com/)
 
 Default data in database are 2 accounts (_locally you can change them in ```data.sql``` file in resources_):
 ```json
@@ -55,7 +55,7 @@ Default data in database are 2 accounts (_locally you can change them in ```data
 #### POST /atm/auth
 
 ##### _Example_
-```POST method``` on [https://tklimczakatm.azurewebsites.net/atm/auth](https://tklimczakatm.azurewebsites.net/atm/auth)
+```POST method``` on [https://tklimczak-atm.herokuapp.com/atm/auth](https://tklimczak-atm.herokuapp.com/atm/auth)
 
 **body**
 ```json
@@ -83,7 +83,7 @@ Default data in database are 2 accounts (_locally you can change them in ```data
   ```Authorization: Bearer _token_u_get_with_authorization_request```
 
 ##### _Example_
-```GET method``` on [https://tklimczakatm.azurewebsites.net/atm/balance](https://tklimczakatm.azurewebsites.net/atm/balance)
+```GET method``` on [https://tklimczak-atm.herokuapp.com/atm/balance](https://tklimczak-atm.herokuapp.com/atm/balance)
 
 **response**
 
@@ -99,7 +99,7 @@ Default data in database are 2 accounts (_locally you can change them in ```data
   ```Authorization: Bearer _token_u_get_with_authorization_request```
 
 ##### _Example_
-```GET method``` on [https://tklimczakatm.azurewebsites.net/atm/withdraw/500](https://tklimczakatm.azurewebsites.net/atm/withdraw/500)
+```GET method``` on [https://tklimczak-atm.herokuapp.com/atm/withdraw/500](https://tklimczak-atm.herokuapp.com/atm/withdraw/500)
 
 **response**
 
@@ -122,7 +122,7 @@ _just check status if its ```200``` everything went OK, if u exceeded the balanc
   ```Authorization: Bearer _token_u_get_with_authorization_request```
 
 ##### _Example_
-```GET method``` on [https://tklimczakatm.azurewebsites.net/atm/add/500](https://tklimczakatm.azurewebsites.net/atm/add/500)
+```GET method``` on [https://tklimczak-atm.herokuapp.com/atm/add/500](https://tklimczak-atm.herokuapp.com/atm/add/500)
 
 **response**
 
